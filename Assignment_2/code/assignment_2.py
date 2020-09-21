@@ -1,22 +1,30 @@
-def event_probability(event_outcomes, sample_space):
-    probability = (event_outcomes / sample_space) 
-    return round(probability, 2)
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import bernoulli
+from scipy.stats import binom
+import seaborn as sns
+sample_size=500
+event_two_head=105
+event_one_head=275
+event_no_head=120
+prob2=event_two_head/sample_size
+prob1=event_one_head/sample_size
+prob0=event_no_head/sample_size
+
+data_binom = binom.rvs(n=2,p=0.5,size=500)
 
 
-# Sample Space
-number_of_toss = 500
 
-# Outcomes
-two_heads = 105
-one_head = 275
-no_head = 120
 
-# Divide possible outcomes by the sample set
-probability_two_heads = event_probability(two_heads, number_of_toss)
-probability_one_head = event_probability(one_head, number_of_toss)
-probability_no_head = event_probability(no_head, number_of_toss)
+#Theory vs simulation
+print("Probability of Two Heads =",prob2,"\n","Probability of One Head =",prob1,"\n","Probability of No Head =", prob0)
 
-# Print probability rounded to two decimal places
-print("Probability of Two Heads = ",round(probability_two_heads, 2))
-print("Probability of One Head = ",round(probability_one_head, 2))
-print("Probability of No Head = ",round(probability_no_head, 2))
+sns.set(color_codes=True)
+# settings for seaborn plot sizes
+sns.set(rc={'figure.figsize':(4.5,3)})
+ax= sns.distplot(data_binom,
+                 kde=False,
+                 color="red",
+                 hist_kws={"linewidth": 15,'alpha':1})
+ax.set(xlabel='Binomial', ylabel='Frequency')
+plt.show()
