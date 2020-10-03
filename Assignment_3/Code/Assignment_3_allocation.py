@@ -77,7 +77,7 @@ P = line_intersect(n1,c1,n2,c2)
 #Plotting points of Intersection
 plt.plot(P[0], P[1], 'o')
 plt.text(P[0] * (1 + 0.1), P[1] * (1 ) , 'P')
-
+plt.text(O[0],O[1]+0.1,'O')
 plt.xlabel('$x$')
 plt.ylabel('$y$')
 plt.legend(loc='best')
