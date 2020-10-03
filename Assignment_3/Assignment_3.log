@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.9.21)  3 OCT 2020 16:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.9.21)  3 OCT 2020 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1292,68 +1292,67 @@ LaTeX Info: Redefining \nameref on input line 68.
 \c@lemma=\count274
 \c@example=\count275
 \c@rem=\count276
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 142.
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--149
-
- []
-
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 153.
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 153.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 142.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 153.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 142.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 153.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 142.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 153.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 142.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-<allocation.png, id=16, 462.528pt x 346.896pt>
-File: allocation.png Graphic file (type png)
-<use allocation.png>
-Package pdftex.def Info: allocation.png  used on input line 177.
-(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
+ []
+
+<Figure_1.png, id=16, 462.528pt x 346.896pt>
+File: Figure_1.png Graphic file (type png)
+<use Figure_1.png>
+Package pdftex.def Info: Figure_1.png  used on input line 188.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./allocation.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 184.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 184.
+ <./Figure_1.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
 
 (./Assignment_3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 184.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 184.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
 Package rerunfilecheck Info: File `Assignment_3.out' has not changed.
 (rerunfilecheck)             Checksum: A9318C79110D9C8E83CA78FF749CBB85;88.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 184.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
  ) 
 Here is how much of TeX's memory you used:
- 31460 strings out of 492982
- 666526 string characters out of 6134896
- 862565 words of memory out of 5000000
- 34412 multiletter control sequences out of 15000+600000
- 67116 words of font info for 142 fonts, out of 8000000 for 9000
+ 31468 strings out of 492982
+ 666631 string characters out of 6134896
+ 867565 words of memory out of 5000000
+ 34410 multiletter control sequences out of 15000+600000
+ 68492 words of font info for 144 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,13n,67p,416b,884s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1365,10 +1364,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on Assignment_3.pdf (1 page, 79028 bytes).
+Output written on Assignment_3.pdf (1 page, 64318 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
+ 85 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
  34 words of extra memory for PDF output out of 10000 (max. 10000000)
 

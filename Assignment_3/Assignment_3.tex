@@ -139,46 +139,57 @@ https://github.com/abhishekt711/EE5600/tree/master/Assignment_3
 \end{lstlisting}
 %
 \section{Problem}
-A cooperative society of farmers has 50 hectare
-of land to grow two crops X and Y. The profit from crops X and Y per hectare are
-estimated as Rs 10,500 and Rs 9,000 respectively. To control weeds, a liquid herbicide
-has to be used for crops X and Y at rates of 20 litres and 10 litres per hectare. Further,
-no more than 800 litres of herbicide should be used in order to protect fish and wild life
-using a pond which collects drainage from this land. How much land should be allocated
-to each crop so as to maximise the total profit of the society?\\
+Maximize $\vec{Z}=5\vec{x}+3\vec{y}$ subject to $3\vec{x}+5\vec{y}\leq15$, $5\vec{x}+2\vec{y}\leq10$, $\vec{x}\geq0$, $\vec{y}\geq0$.\\
 \section{Explanation}
-The profit from crops X and Y per hectare are
-estimated as Rs 10,500 and Rs 9,000 respectively.\\
-So, The given problem can be written as
+This problem can be formulated as:
 \begin{align}
-\max_{\vec{x}} Z &= \myvec{10500 & 9000}\vec{x}\label{eq1}
-\end{align}
-A liquid herbicide has to be used for crops X and Y at rates of 20 litres and 10 litres per hectare. Further,
-no more than 800 litres of herbicide should be used to control the weeds. So this can be formulated as:
-\begin{align}
+\max_{\vec{x}} Z &= \myvec{5 & 3}\vec{x}
+\\
 s.t. \quad 
 \myvec{
-20 & 10
+3 & 5
+\\
+5 & 2
 }
-\vec{x} & \preceq 800 \label{eq2}
+\vec{x} &\preceq \myvec{15\\10}
+\\
+\vec{x} &\succeq \vec{0}\\
+\vec{y} &\succeq \vec{0}
 \end{align}
-A cooperative society of farmers has 50 hectare
-of land to grow two crops X and Y. We can write it as:
+%
+The given problem can be expressed in general as
 \begin{align}
-\myvec{
-1 & 1
-} 
-\vec{x} &= 50
-\label{eq3}
+\max_{\vec{x}} &\vec{c}^{T}\vec{x} \label{eq5}
+\\
+s.t. \quad \vec{A}\vec{x} &\le \vec{b},
+\\
+\vec{x} &\succeq\vec{0}\\
+\vec{y} &\succeq\vec{0}
 \end{align}
-Fig  \ref{fig:allocation}
+%
+where
+\begin{align}
+\vec{c} &= \myvec{5 \\ 3}
+\\
+\vec{A} &=
+\myvec{
+3 & 5
+\\
+5 & 2
+}
+\\
+\vec{b}&=\myvec{15\\10}
+%
+\end{align}
+
+Fig  \ref{fig:Figure_1}
 shows the optimal point through the intersection of various lines.
 \begin{figure}[h]
-\includegraphics[width=\columnwidth]{allocation.png}
-\caption{Feasible region for allocation Problem}
-\label{fig:allocation}
+\includegraphics[width=\columnwidth]{Figure_1.png}
+\caption{optimal point through the intersection of various lines}
+\label{fig:Figure_1}
 \end{figure}
 
-The following code provides the optimal solution to \eqref{eq3} at \myvec{30\\20}.\\
-Hence 30 hectare of land should be allocated to crop X and 20 hectare of land should be allocated to crop Y.
+From \ref{fig:Figure_1}, the following graph provides the optimal solution at \myvec{5\\0} using \eqref{eq5}.\\
+The Maximum value of $\vec{Z}$ at $\myvec{5\\0}$ is 25.
 \end{document}
