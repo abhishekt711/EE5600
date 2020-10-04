@@ -149,36 +149,30 @@ Z-5x-3y=0\\
 \end{align}
 We will write the simplex tableau
 \begin{align}
-\begin{bmatrix}
-\begin{array}{ccccc}
-  x & y & s_1 & s_2 & c  \\ 
+\myvec{
+ x & y & s_1 & s_2 & c  \\ 
   3 & 5 & 1 & 0 & 15 \\ 
-  \hlight{5} & 2 & 0 & 1 & 10  \\[0.1cm] \hline
-  -5 & -3 & 0 & 0 & 0 \\
-\end{array}
-\end{bmatrix}
+  \hlight{5} & 2 & 0 & 1 & 10  \\ \hline
+  -5 & -3 & 0 & 0 & 0 
+}
 \end{align}
 Keeping the pivot element as $5$, we will use gauss-jordan elimination.
 \begin{align}
-\begin{bmatrix}
-\begin{array}{ccccc}
+\myvec{
   x & y & s_1 & s_2 & c  \\[0.1cm] 
-  0 & \hlight{\frac{19}{5}} & 1 & \frac{-3}{5} & 9 \\[0.15cm] 
-  1 & \frac{2}{5} & 0 & \frac{1}{5} & 2  \\[0.1cm] \hline
-  0 & -1 & 0 & 1 & 10 \\
-\end{array}
-\end{bmatrix}
+  0 & \hlight{\frac{19}{5}} & 1 & \frac{-3}{5} & 9 \\
+  1 & \frac{2}{5} & 0 & \frac{1}{5} & 2  \\ \hline
+  0 & -1 & 0 & 1 & 10 
+}
 \end{align}
 Keeping the pivot element as $\frac{19}{5}$, we will use gauss-jordan elimination.
 \begin{align}
-\begin{bmatrix}
-\begin{array}{ccccc}
+\myvec{
   x & y & s_1 & s_2 & c  \\ 
   0 & 1 & \frac{5}{19} & \frac{-3}{19} & \frac{45}{19} \\ 
-  1 & 0 & \frac{-2}{19} & \frac{5}{19} & \frac{20}{19}  \\[0.1cm] \hline 
+  1 & 0 & \frac{-2}{19} & \frac{5}{19} & \frac{20}{19}  \\ \hline 
   0 & 0 & \frac{5}{19} & \frac{16}{19} & \frac{235}{19} \\
-\end{array}
-\end{bmatrix}
+}
 \end{align}
 In this tableau, there are no negative elements in the bottom row. We have therefore determined the optimal solution to be:
 \begin{align}
