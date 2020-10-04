@@ -192,5 +192,56 @@ Z=\frac{235}{19}
 \caption{optimal point through the intersection of various lines}
 \label{fig:Figure_1}
 \end{figure}\\
-Hence, the maximum value of $\vec{Z}$ on the given constraint is $\frac{235}{19}$.
+
+\begin{align}
+\max_{\vec{x}} Z &= \myvec{5 & 3}\vec{x}
+\\
+s.t. \quad 
+\myvec{
+3 & 5
+\\
+5 & 2
+}
+\vec{x} &\preceq \myvec{15\\10}
+\\
+\vec{x} &\succeq \vec{0}\\
+\vec{y} &\succeq \vec{0}
+\end{align}
+%
+using cvxpy.
+\\
+The given problem can be expressed in general as matrix inequality as:
+\begin{align}
+\max_{\vec{x}} &\vec{c}^{T}\vec{x}
+\\
+s.t. \quad \vec{A}\vec{x} &\le \vec{b},
+\\
+\vec{x} &\succeq\vec{0}\\
+\vec{y} &\succeq \vec{0}
+\end{align}
+%
+where
+\begin{align}
+\vec{c} &= \myvec{5 \\ 3}
+\\
+\vec{A} &=
+\myvec{
+3 & 5
+\\
+5 & 2
+}
+\\
+\vec{b}&=\myvec{15\\10}
+%
+\end{align}
+%
+and can be solved using {\em cvxpy} through the following code
+\begin{lstlisting}
+code/Assignment_3.py
+\end{lstlisting}
+Hence,
+\begin{align}
+\vec{x} = \myvec{1.05263158\\2.36842105}, Z = 12.36842102
+\end{align}
+
 \end{document}
