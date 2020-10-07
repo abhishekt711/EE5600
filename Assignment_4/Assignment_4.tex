@@ -150,6 +150,27 @@ Given Equation can be written as:
 \begin{align}
 	\vec{x}^T\myvec{4&0\\0&0}\vec{x}  + \myvec{-4&0}\vec{x} +4 = 0
 \end{align}
+For a function to be a convex, It should follow this condition:
+    \begin{align}
+        f(\lambda x_1+(1-\lambda) x_2) \leq \lambda f(x_1)+(1-\lambda) f(x_2) \label{eq1}
+    \end{align}
+    When, we take $\lambda=0.5, x_1=2, x_2=0$, It satisfy the equation \ref{eq1}.
+    Thus, It is a convex function.\\
+    
+    
+    
+    Using gradient descent method,
+    \begin{align}
+    x_1=x_0-lr\frac{df(x)}{dx} \label{eq2}
+    \end{align}
+    Here, $lr$ is learning rate.\\
+    \begin{align}
+    \frac{df(x)}{dx}=8x-4
+\end{align}
+    Taking $lr=0.1$, $x_0=2$ and substiuting in equation \ref{eq2} . After 4 iteration, the value of $x$ where minima occurs is:
+    \begin{align}
+    x=0.50048
+    \end{align}
 At maxima / minima slope of $f(x)$ will be zero.
 \begin{align}
     \frac{df(x)}{dx}=0\\
