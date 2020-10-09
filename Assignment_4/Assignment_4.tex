@@ -174,25 +174,12 @@ The above inequality is always true for all values from the domain. Hence the gi
 \end{align}
 After substituting \ref{eq3} in \ref{eq2} we get:
 \begin{align}
-x_n=x_{n-1}-\mu( 8x-4)
+x_n=x_{n-1}-\mu( 8x_{n-1}-4)\label{eq4}
 \end{align}
-taking $\mu=0.1$, $x_0=2$, we get:
+In equation \eqref{eq4}, $\mu$ is a variable parameter known as step size. $x_{n+1}$ is the next position. The minus sign refers to the minimization part of gradient descent. Assume, $\mu=0.01$, $x_0=2$ and following the above method, we keep doing iterations until $x_{n+1}-x_{n}$ becomes less than the value of precision we have chosen.
 \begin{align}
-&x_1=2-0.1(8\times2-4)\\
-&x_1=0.8\\
-&x_2=0.8-0.1(8\times 0.8 -4)\\
-&x_2=0.56\\
-&x_3=0.56-0.1(8\times 0.56 -4)\\
-&x_3=0.512\\
-&x_4=0.512-0.1(8\times 0.512-4)\\
-&x_4=0.5024\\
-&x_5=0.5024-0.1(8\times 0.5024 -4)\\
-&x_5=0.50048
-\end{align}
-after iterationg, finally:
-    \begin{align}
     x_n=0.5
-    \end{align}
+\end{align}
 The following python code computes the minimum value as plotted in Fig. \ref{fig:5.1}. Hence, The minimum value of $f(x)$ at $x=0.5$ is 3.
 	\begin{lstlisting}
 	./codes/Assignment_4.py
